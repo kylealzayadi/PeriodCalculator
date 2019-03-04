@@ -1,0 +1,34 @@
+<!--
+  Generated template for the SunPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>Sun</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <img id="sunpic" src="../../assets/sun.png">
+    <div id="position">
+      <form [formGroup]="form">
+          <ion-item>
+            <ion-label><b>Length of String:</b></ion-label>
+            <ion-input type="text"  name="title" formControlName="length"></ion-input>
+          </ion-item>
+         
+          <button ion-button type="submit" block (click)="onSubmit()">Calculate</button>
+        </form>
+      </div>
+      <div *ngFor="let form of submissions">
+      <h1 id="demo"><b>{{form}} <br>Seconds</b></h1>
+    </div>
+  </ion-content>

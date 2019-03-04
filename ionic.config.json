@@ -1,0 +1,7 @@
+{
+  "name": "sciencefair",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
