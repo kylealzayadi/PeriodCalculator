@@ -15,5 +15,15 @@ page-home {
     top: 100px;
 }
 
+ // Ensure the navbar menu (sidebar) button/icon renders white
+ ion-navbar {
+     button[ion-button] {
+         color: #ffffff !important;
+     }
+     button[ion-button] .ion-icon {
+         color: #ffffff !important;
+         fill: #ffffff !important;
+     }
+ }
 
 }
