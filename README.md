@@ -23,7 +23,7 @@ npm start -- --lab   # Lab view (device frames). Use `npm start` for the default
 - If you re-install dependencies, ensure `sass` is present; the build is configured to prefer dart-sass instead of node-sass.
 
 ## 2026 update
-- This project won the schoolwide science fair and advanced to regionals in 2019.
+- This project won the schoolwide science fair and advanced to regionals in 2019. We got sent to Passadena, was my first time there!
 
 ## Deployment
 
