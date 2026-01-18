@@ -1,0 +1,6 @@
+[build]
+  command = "npm run build --legacy-peer-deps"
+  publish = "www"
+
+[build.environment]
+  NPM_FLAGS = "--legacy-peer-deps --ignore-scripts"
