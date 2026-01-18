@@ -25,5 +25,25 @@ npm start -- --lab   # Lab view (device frames). Use `npm start` for the default
 ## 2026 update
 - This project won the schoolwide science fair and advanced to regionals in 2019.
 
+## Deployment
+
+### GitHub Pages (easiest, free)
+1. Go to repo Settings → Pages → Source: **Deploy from a branch**
+2. Branch: `master`, Folder: `/` (or `/docs` if you're willing to move `www/` there)
+3. GitHub Pages will serve it at `https://kylealzayadi.github.io/PeriodCalculator/`
+
+**Note:** The `www/` folder (production build) is not tracked in Git. To deploy:
+- Option A: Build locally (`npm run build`) and manually push `www/` (remove it from `.gitignore`, commit, push).
+- Option B: Use **Netlify** (auto-builds on every push—recommended).
+
+### Netlify (recommended, auto-builds)
+1. Sign up at [netlify.com](https://netlify.com)
+2. Connect your GitHub repo
+3. Build command: `npm run build`
+4. Publish directory: `www/`
+5. Deploy & get a live URL instantly
+
+Every push to `master` auto-rebuilds and deploys.
+
 ## Release tagging
 - Current tag: v0.1.0 (first snapshot after the Sass migration and UI polish).
