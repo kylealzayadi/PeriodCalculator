@@ -8,35 +8,13 @@
 </ion-header>
 
 <ion-content padding> 
- 
-  
-  <ion-fab center middle id="hey">
-    <button ion-fab color="danger"><ion-icon name="md-share"></ion-icon></button>
-    <ion-fab-list side="top">
-      <button ion-fab color="primary"><ion-icon name="logo-vimeo"></ion-icon></button>
-    </ion-fab-list>
-    <ion-fab-list side="bottom">
-      <button ion-fab color="secondary"><ion-icon name="logo-facebook"></ion-icon></button>
-    </ion-fab-list>
-    <ion-fab-list side="left">
-      <button ion-fab color="light"><ion-icon name="logo-googleplus"></ion-icon></button>
-    </ion-fab-list>
-    <ion-fab-list side="right">
-      <button ion-fab color="dark"><ion-icon name="logo-twitter"></ion-icon></button>
-    </ion-fab-list>
-    <ion-fab-list side="middle-right">
-      <button ion-fab color="dark"><ion-icon name="logo-googleplus"></ion-icon></button>
-    </ion-fab-list>
-  </ion-fab>
-    
-  <ion-fab class="fabearth">
-    <button ion-fab><ion-icon src="assets/eath.svg"></ion-icon></button>
-   
-  </ion-fab>
-
-
-   <!-- goes in form tag inside (ngSubmit)="post()" -->
-
-  
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <div style="text-align: center; margin-top: 50px; color: white;">
+    <h1>Period Calculator</h1>
+    <p>Calculate the period of a pendulum on different planets</p>
+    <p>Use the menu to select a planet and start calculating</p>
+    <button ion-button large menuToggle style="margin-top: 30px;">
+      Open Menu
+    </button>
+    <img src="assets/imgs/sciencefairwinner.jpg" style="margin-top: 30px; max-width: 100%; height: auto;">
+  </div>
 </ion-content>

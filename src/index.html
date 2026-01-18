@@ -28,6 +28,151 @@
   </script>-->
 
   <link href="build/main.css" rel="stylesheet">
+  
+  <style>
+    /* Hide scrollbars for a more native look */
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    
+    * {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    
+    /* Add padding for iOS status bar */
+    ion-header {
+      padding-top: 30px;
+    }
+    
+    /* For devices with notch */
+    @supports (padding-top: env(safe-area-inset-top)) {
+      ion-header {
+        padding-top: calc(env(safe-area-inset-top) + 10px);
+      }
+    }
+    
+    /* Remove extra top padding in sidebar */
+    ion-menu ion-header {
+      padding-top: 0;
+    }
+    
+    @supports (padding-top: env(safe-area-inset-top)) {
+      ion-menu ion-header {
+        padding-top: 0;
+      }
+    }
+    
+    /* Extend sidebar background */
+    ion-menu {
+      padding-top: 0;
+      background: rgba(0, 0, 0, 0.8);
+      --background: transparent !important;
+    }
+    
+    @supports (padding-top: env(safe-area-inset-top)) {
+      ion-menu {
+        padding-top: 0;
+      }
+    }
+    
+    ion-menu ion-content {
+      --padding-top: 0 !important;
+      --background: transparent !important;
+    }
+    
+    /* Fill the top gap with sidebar color */
+    ion-menu::before {
+      display: none;
+    }
+    
+    /* White text for sidebar */
+    ion-menu ion-header {
+      background-color: rgba(0, 0, 0, 0.9);
+      --background: transparent;
+    }
+    
+    ion-menu ion-toolbar {
+      --background: transparent;
+      --color: #fff;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+    
+    ion-menu ion-title {
+      color: #fff;
+      margin-top: 6px;
+    }
+    
+    ion-menu ion-list {
+      background: transparent;
+    }
+    
+    ion-menu ion-item {
+      --background: transparent !important;
+      --color: #fff;
+      color: #fff;
+      box-shadow: none !important;
+      border: none !important;
+      --border-color: transparent !important;
+      --border-width: 0 !important;
+      --inner-border-width: 0 !important;
+      --ion-item-border-color: transparent !important;
+      background: transparent !important;
+      background-image: none !important;
+      border-top: none !important;
+      border-bottom: none !important;
+      padding-left: 10px !important;
+    }
+    
+    ion-menu ion-item::before {
+      display: none !important;
+    }
+    
+    ion-menu ion-item::after {
+      display: none !important;
+    }
+    
+    ion-menu ion-list ion-item:first-child {
+      border-top: none !important;
+    }
+    
+    ion-menu ion-divider {
+      display: none !important;
+    }
+    
+    ion-menu button[ion-item]::before,
+    ion-menu button[ion-item]::after {
+      display: none !important;
+    }
+    
+    ion-menu ion-label {
+      color: #fff !important;
+    }
+
+    /* Space out sidebar menu items */
+    ion-menu ion-list button[ion-item] {
+      margin-bottom: 15px !important;
+    }
+    
+    ion-menu button[menuClose][ion-item] {
+      margin-bottom: 15px !important;
+    }
+    
+    ion-menu ion-list .item-divider {
+      display: none !important;
+    }
+    
+    ion-menu button[ion-item] .item-inner {
+      border-bottom-color: transparent !important;
+      border-bottom: none !important;
+      background: transparent !important;
+    }
+    
+    ion-menu ion-item * {
+      background: transparent !important;
+    }
+  </style>
 
 </head>
 <body>

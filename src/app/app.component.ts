@@ -18,7 +18,7 @@ import { JupiterPage } from '../pages/jupiter/jupiter';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = MoonPage;
+  rootPage: any = HomePage;
 
   pages: Array<{title: string, component: any}>;
 
